@@ -29,10 +29,12 @@ const App = () => {
       <center>
         {state.map((item) => (
           <div>
-            <span>{item.name.title}</span> &nbsp;
-            <span>{item.name.first}</span> &nbsp;
-            <span>{item.name.last}</span> <br />
-            <span>{item.email}</span>
+            <li>
+              <span>{item.name.title}</span> &nbsp;
+              <span>{item.name.first}</span> &nbsp;
+              <span>{item.name.last}</span> <br />
+              <span>{item.email}</span>
+            </li>
           </div>
         ))}
         <button onClick={refresh}>Refresh</button>
