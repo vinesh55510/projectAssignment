@@ -22,7 +22,7 @@ const App = () => {
       setState(response.data.results);
     }
     getStorageData();
-  }, [state]);
+  }, []);
 
   return (
     <div>
